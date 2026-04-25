@@ -1,0 +1,18 @@
+flowchart TD
+    A([Program Start]) --> B[Open database.txt]
+    B --> C{File opened?}
+    C -->|No| D[Show file error]
+    C -->|Yes| E[Read line]
+    E --> F{End of file?}
+    F -->|No| G[Split line by pipe delimiter]
+    G --> H{7 fields valid?}
+    H -->|No| I[Skip bad line or show warning]
+    H -->|Yes| J[Convert id and price]
+    J --> K[Create FoodItem]
+    K --> L[Push to foods vector]
+    I --> E
+    L --> E
+    F -->|Yes| M[Close file and run program]
+    M --> N[On clean exit, open database.txt for writing]
+    N --> O[Write each FoodItem.toFileString]
+    O --> P([End])

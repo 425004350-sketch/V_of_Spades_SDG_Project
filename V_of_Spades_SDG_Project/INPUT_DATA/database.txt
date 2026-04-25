@@ -1,0 +1,20 @@
+1|Halo-Halo|sunny|low|75|Local Dessert Stall|Cold dessert suitable for hot weather
+2|Fresh Lumpia|sunny|low|65|Campus Canteen|Light vegetable-based snack for warm days
+3|Fruit Bowl|sunny|low|95|Healthy Corner|Refreshing fruit option for hot weather
+4|Iced Coffee and Sandwich|sunny|mid|130|Cafe Near Campus|Light meal and cold drink for sunny days
+5|Chicken Inasal|sunny|mid|150|Mang Inasal|Grilled meal suitable for active sunny days
+6|Grilled Fish Meal|sunny|mid|180|Local Grill House|Protein-rich meal with lighter preparation
+7|Seafood Rice Bowl|sunny|high|260|Seafood Express|Filling meal for users with higher budget
+8|Sinigang|rainy|mid|130|Karinderya ni Aling Nena|Warm sour soup suitable for rainy weather
+9|Arroz Caldo|rainy|low|70|Local Lugawan|Warm rice porridge for cold or rainy days
+10|Lugaw with Egg|rainy|low|55|Lugawan sa Kanto|Affordable warm comfort food
+11|Beef Mami|rainy|low|90|Noodle House|Hot noodle soup for rainy weather
+12|Beef Pares|rainy|mid|120|Pares House|Warm savory meal for rainy days
+13|Bulalo|rainy|high|280|Batangas Bulalo House|Hot soup meal for heavy rainy weather
+14|Champorado|rainy|low|80|Campus Snack Bar|Warm sweet rice meal for rainy mornings
+15|Chicken Sopas|cold|low|80|Local Canteen|Creamy warm soup for cold weather
+16|Tinola|cold|mid|120|Home-Style Eatery|Ginger-based soup good for cold weather
+17|Batchoy|cold|mid|140|Iloilo Batchoy House|Hot noodle soup for cold weather
+18|Hot Chocolate and Bread|cold|low|60|Bakery Cafe|Warm drink and snack for cold days
+19|Nilagang Baka|cold|high|230|Filipino Kitchen|Hot beef soup suitable for cold weather
+20|Chicken Curry Rice|cold|mid|150|Rice Bowl Station|Warm spiced meal for cold weather

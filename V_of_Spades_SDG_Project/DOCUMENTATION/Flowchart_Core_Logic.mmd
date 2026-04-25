@@ -1,0 +1,30 @@
+flowchart TD
+    A([Start]) --> B[Create FoodManager object]
+    B --> C[Load database.txt]
+    C --> D[Display WEASOLVE header and menu]
+    D --> E[Get validated menu choice]
+    E --> F{Choice}
+    F -->|1| G[Enter current weather]
+    F -->|2| H[Recommend food by weather]
+    F -->|3| I[Save favorite food]
+    F -->|4| J[View favorite foods]
+    F -->|5| K[Find restaurants by weather and budget]
+    F -->|6| L[View all food records]
+    F -->|7| M[Search food record]
+    F -->|8| N[Add food record]
+    F -->|9| O[Update food record]
+    F -->|10| P[Delete food record]
+    F -->|11| Q[Generate summary report]
+    F -->|12| R[Save records to database.txt]
+    G --> D
+    H --> D
+    I --> D
+    J --> D
+    K --> D
+    L --> D
+    M --> D
+    N --> D
+    O --> D
+    P --> D
+    Q --> D
+    R --> S([End])

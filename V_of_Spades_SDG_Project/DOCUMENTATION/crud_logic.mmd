@@ -1,0 +1,27 @@
+flowchart TD
+    A([Start CRUD]) --> B{Operation}
+    B -->|Create| C[Ask food details]
+    C --> D[Validate weather, budget, price]
+    D --> E[Create FoodItem object]
+    E --> F[Add to vector]
+    B -->|Read| G[View all or search]
+    G --> H[Display matching records]
+    B -->|Update| I[Ask record ID]
+    I --> J{ID exists?}
+    J -->|No| K[Show not found]
+    J -->|Yes| L[Choose field and enter new value]
+    L --> M[Use setter to update object]
+    B -->|Delete| N[Ask record ID]
+    N --> O{ID exists?}
+    O -->|No| P[Show not found]
+    O -->|Yes| Q[Confirm deletion]
+    Q --> R{Confirmed?}
+    R -->|Yes| S[Erase from vector]
+    R -->|No| T[Cancel deletion]
+    F --> U([Return to menu])
+    H --> U
+    K --> U
+    M --> U
+    P --> U
+    S --> U
+    T --> U

@@ -1,0 +1,23 @@
+flowchart TD
+    A([Start Recommendation]) --> B{Weather set?}
+    B -->|No| C[Show message: enter weather first]
+    B -->|Yes| D[Ask budget level]
+    D --> E[Ask available money]
+    E --> F[Loop through FoodItem vector]
+    F --> G{Weather matches?}
+    G -->|No| F
+    G -->|Yes| H{Budget matches?}
+    H -->|No| F
+    H -->|Yes| I{Price <= money?}
+    I -->|No| F
+    I -->|Yes| J[Display recommendation]
+    J --> F
+    F --> K{Any result found?}
+    K -->|No| L[Show no matching recommendation]
+    K -->|Yes| M[Ask if user wants to save favorite]
+    M --> N{Save?}
+    N -->|Yes| O[Push selected FoodItem to favorites]
+    N -->|No| P[Return to menu]
+    O --> P
+    C --> P
+    L --> P
