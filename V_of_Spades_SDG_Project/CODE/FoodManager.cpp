@@ -7,13 +7,25 @@
 using namespace std;
 
 int FoodManager::findIndexById(int id) const {
-    // TODO Domingo: loop through foods and return index if ID matches.
+    for (int i = 0; i < foods.size(); ++i) {
+        if (foods[i].getId() == id) {
+            return i;
+        }
+    }
+    
     return -1;
+}
 }
 
 int FoodManager::generateNextId() const {
-    // TODO Domingo: find highest ID and return highest + 1.
-    return 1;
+    int maxId = 0;
+    for (const auto& food : foods) {
+        if (food.getId() > maxId) {
+            maxId = food.getId();
+        }
+    }
+    return maxId + 1;
+}
 }
 
 bool FoodManager::loadFromFile(const string& filename) {
